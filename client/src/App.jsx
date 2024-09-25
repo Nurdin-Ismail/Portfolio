@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="bg-[#f4f1f76e] ">
+    <div className="bg-[#f4f1f76e] overflow">
 
       <Navbar />
       <Home />
