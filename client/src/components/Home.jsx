@@ -24,28 +24,32 @@ export default function Home() {
     return (
         <div>
 
-            <div class='about bg-[#E9EAFF] min-h-[110vh] grid ' id='about'>
+            <div class='about bg-[#E9EAFF]  ' id='about'>
 
-                <img src={hero} alt="" className=' h-[70vh] ml-12 mb-[120px]' />
+            
+
+                <div className='intro'>
+                    <img id='hero' src={hero} alt="" className=' ' />
 
                 <div className='about-text'>
                     <div className='text'>
-                        <div className='flex'>
-                            <h1 className='text-9xl  font-normal'>Frontend </h1>
-                            <img src={and} alt="" className='max-h-[140px] ml-28' />
+                        <div className='title'>
+                            <h1 className='    font-normal'>Frontend </h1>
+                            <img src={and} alt="" className='' />
 
                         </div>
 
-                        <h1 className='text-9xl font-normal'>Backend Developer</h1>
+                        <h1 className=' font-normal'>Backend Developer</h1>
 
 
-                        <p className='mr-[800px] mt-10 text-2xl leading-10 font-light '>I'm Nurdin, a full-stack developer skilled in ReactJS, Python, and various web technologies, creating everything from responsive user interfaces to robust backend systems. Recently, I’ve started exploring Odoo development and I'm excited to apply my skills to create business applications within its ecosystem.</p>
+                        <p className='  text-2xl leading-10 font-light '>I'm Nurdin, a full-stack developer skilled in ReactJS, Python, and various web technologies, creating everything from responsive user interfaces to robust backend systems. Recently, I’ve started exploring Odoo development and I'm excited to apply my skills to create business applications within its ecosystem.</p>
                     </div>
+                </div>
                 </div>
 
             </div>
 
-
+{/* 
             <section id='projects' className='grid gap-[200px] bg-[#f4f1f76e] pb-20'>
 
                 <div>
@@ -128,7 +132,6 @@ export default function Home() {
 
                             <div className='flex place-items-center justify-center gap-10'>
 
-                                {/* <a href="https://github.com/Nurdin-Ismail/Decora-Frontend"><img src={github} alt="" /></a> */}
                                 <img src={expand} alt="" className=' cursor-pointer place-self-start' onClick={() => setcurrent('restomate')} />
                             </div>
 
@@ -196,7 +199,7 @@ export default function Home() {
 
                 </div>
 
-            </section>
+            </section> */}
 
             {current ? <ProjectMedia current={current} setcurrent={setcurrent} /> : null}
 

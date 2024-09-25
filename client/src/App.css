@@ -7,25 +7,71 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-.about img {
-    display: grid;
-    place-self: end start;
-    grid-area: 1/1;
-}
+ .about{
+        display: grid;
+        
 
-.about-text {
-    display: grid;
-    grid-template-rows: 1.3fr 2fr 0.5fr;
-    grid-area: 1/1;
-    grid-template-columns: 0.25fr 2fr 0.2fr;
+    }
+
+    .intro{
+        display: grid;
+        height: 110vh;
+        
+    }
+
+        .intro #hero {
+            display: grid;
+            place-self: end start;
+            grid-area: 1/1;
+            height: 70vh;
+            margin-left: 50px;
+
+            margin-bottom: 120px;
+        }
+    
+        .about-text {
+            display: grid;
+            /* grid-template-rows: 1.3fr 2fr 0.5fr; */
+            grid-area: 1/1;
+            /* grid-template-columns: 0.25fr 2fr 0.2fr; */
+            margin-left: 200px;
+            /* place-content: center; */
+            place-self: center start;
+            margin-top: 20px;
+            
 
 
+            
+    
+    
+        }
 
-}
+        .about-text h1{
+            font-size: 8rem;
+            line-height: 1;
+        }
+    
 
-.about-text .text {
-    grid-area: 2/2;
-}
+        .about-text p{
+            /* padding-right: 800px; */
+            margin-left: 20px;
+
+            font-size: 1.5rem;
+            line-height: 2rem;
+            /* margin-top: 20px; */
+
+
+            
+        }
+
+        .title img{
+            height: 120px;
+            margin-left: 7rem;
+        }
+
+        .text .title{
+            display: flex;
+        }
 
 
 
@@ -167,11 +213,11 @@ nav ul li a {
 }
 
 .contact-button {
-    border: 2px solid black;
+    border: 1px solid black;
     /* border-black border-[2px] */
-    border-radius: 1.5rem;
+        border-radius: 1414px;
     /* rounded-3xl */
-    padding: 0.75rem;
+    padding: 0.75rem 1.5rem;
     /* p-3 */
     display: grid;
     place-self: center;
@@ -257,7 +303,7 @@ nav ul li a {
     background-color: #f5f5f5;
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 650px) {
     .hamburger {
         display: block;
     }
@@ -265,4 +311,318 @@ nav ul li a {
     nav ul {
         display: none;
     }
+
+    nav .logo h1 {
+            font-size: 1.2rem;
+            /* text-[2.3em] */
+            letter-spacing: 0.05em;
+            /* tracking-wide */
+            font-weight: 500;
+            /* font-medium */
+        }
+
+
 }
+
+
+
+/* Tablets and small desktops */
+@media screen and (min-width: 650px) {
+    /* styles */
+    nav .logo h1 {
+            font-size: 1.5em;
+            /* text-[2.3em] */
+            letter-spacing: 0.05em;
+            /* tracking-wide */
+            font-weight: 500;
+            /* font-medium */
+        }
+
+        nav ul li a {
+            /* gap-20 */
+            font-size: 1em;
+            /* text-[1.2em] */
+            font-weight: 300;
+    
+        }
+
+        
+
+                 .intro #hero {
+                     height: 30vh;
+                     margin-bottom: 180px;
+
+                     /* place-self: center start; */
+        
+                 }
+        
+                 .about-text h1 {
+                     font-size: 4rem;
+                     line-height: 1;
+                 }
+        
+        
+                 .text p {
+                     /* padding-right: 800px; */
+                     margin-top: 20px;
+                     margin-left: 20px;
+        
+                     font-size: 1rem;
+                     line-height: 1.3rem;
+                     width: 50%;
+        
+        
+                 }
+        
+                 .about-text {
+                     margin-left: 150px;
+                     place-self: center;
+                    margin-top: 15px;
+                 }
+        
+                 .title img {
+                     height: 50px;
+                     margin-left: 2rem;
+                 }
+}
+
+/* Medium desktops */
+@media screen and (min-width: 1024px) {
+    /* styles */
+    nav .logo h1 {
+            font-size: 1.2em;
+            /* text-[2.3em] */
+            letter-spacing: 0.04em;
+            /* tracking-wide */
+            font-weight: 500;
+            /* font-medium */
+        }
+    
+        nav ul li a {
+            /* gap-20 */
+            font-size: 0.7em;
+            /* text-[1.2em] */
+            font-weight: 300;
+    
+        }
+
+        nav{
+
+            padding-top: 20px;
+
+        }
+
+
+        .contact-button{
+            padding: 10px 10px;
+        }
+
+       
+
+                .intro #hero{
+                    height: 50vh;
+                    margin-bottom: 180px;
+
+                }
+                 .about-text h1 {
+                     font-size: 4rem;
+                     line-height: 1;
+                 }
+        
+        
+                 .text p {
+                     /* padding-right: 800px; */
+                     margin-top: 20px;
+                     margin-left: 20px;
+        
+                     font-size: 1rem;
+                     line-height: 1.3rem;
+                    width: 54%;
+        
+        
+                 }
+
+                 .about-text{
+                    margin-left: 150px;
+                 }
+        
+                 .title img {
+                     height: 50px;
+                     margin-left: 2rem;
+                 }
+
+               
+}
+
+@media screen and (min-width: 1200px) {
+
+    nav .logo h1 {
+            font-size: 1.8em;
+            /* text-[2.3em] */
+            letter-spacing: 0.04em;
+            /* tracking-wide */
+            font-weight: 500;
+            /* font-medium */
+        }
+    
+        nav ul li a {
+            /* gap-20 */
+            font-size: 0.9em;
+            /* text-[1.2em] */
+            font-weight: 300;
+    
+        }
+    
+        nav {
+    
+            padding-top: 20px;
+    
+        }
+
+
+    .intro #hero {
+            height: 60vh;
+            margin-bottom: 100px;
+
+            
+        }
+
+         .about-text h1 {
+             font-size: 5rem;
+             line-height: 1;
+         }
+    
+    
+        
+    
+         .title img {
+             height: 70px;
+             margin-left: 2rem;
+         }
+    
+         .text p {
+             width: 50%;
+              margin-left: 20px;
+    
+             font-size: 1.2rem;
+             line-height: 1.5rem;
+             margin-top: 20px;
+         }
+
+         .about-text{
+            margin-left: 150px;
+            margin-top: 150px;
+         }
+
+    
+
+
+    
+    
+}
+
+/* Large desktops */
+@media screen and (min-width: 1440px) {
+    /* styles */
+    nav .logo h1 {
+            font-size: 2.3em;
+            /* text-[2.3em] */
+            letter-spacing: 0.05em;
+            /* tracking-wide */
+            font-weight: 500;
+            /* font-medium */
+        }
+    
+        nav ul li a {
+            /* gap-20 */
+            font-size: 1.4em;
+            /* text-[1.2em] */
+            font-weight: 300;
+    
+        }
+    nav ul{
+        gap: 60px;
+    }
+
+    nav{
+
+        padding: 40px 100px;
+    }
+
+         .intro #hero {
+             height: 70vh;
+             margin-bottom: 120px;
+         }
+
+  
+         .about-text h1 {
+             font-size: 6.5rem;
+         }
+    
+    
+         .about-text p {
+             /* padding-right: 800px; */
+             margin-left: 20px;
+    
+             font-size: 1.8rem;
+             line-height: 2rem;
+    
+    
+    
+         }
+    
+         .title img {
+             height: 100px;
+             margin-left: 7rem;
+         }
+
+        .about-text p {
+            /* padding-right: 800px; */
+            margin-left: 20px;
+    
+            width: 50%;
+    
+    
+        }
+
+        .abou-text{
+            /* margin-top: 120px ;
+            margin-left: 400px; */
+        }
+
+  
+
+    
+    
+
+
+}
+
+/* 4K screens */
+@media screen and (min-width: 2000px) {
+    /* styles */
+
+    nav .logo h1 {
+            font-size: 2.5em;
+            /* text-[2.3em] */
+            letter-spacing: 0.05em;
+            /* tracking-wide */
+            font-weight: 500;
+            /* font-medium */
+        }
+    
+        nav ul li a {
+            /* gap-20 */
+            font-size: 1.8em;
+            /* text-[1.2em] */
+            font-weight: 300;
+    
+        }
+
+    nav ul{
+        gap: 100px;
+    }
+
+}
+
+
