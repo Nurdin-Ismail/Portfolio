@@ -5,94 +5,81 @@
 
 body {
     font-family: "Inter", sans-serif;
+    margin: 0%;
+    padding: 0%;
 }
 
- .about{
-        display: grid;
-        
-
-    }
-
-    .intro{
-        display: grid;
-        height: 110vh;
-        
-    }
-
-        .intro #hero {
-            display: grid;
-            place-self: end start;
-            grid-area: 1/1;
-            height: 70vh;
-            margin-left: 50px;
-
-            margin-bottom: 120px;
-        }
-    
-        .about-text {
-            display: grid;
-            /* grid-template-rows: 1.3fr 2fr 0.5fr; */
-            grid-area: 1/1;
-            /* grid-template-columns: 0.25fr 2fr 0.2fr; */
-            margin-left: 200px;
-            /* place-content: center; */
-            place-self: center start;
-            margin-top: 20px;
-            
-
-
-            
-    
-    
-        }
-
-        .about-text h1{
-            font-size: 8rem;
-            line-height: 1;
-        }
-    
-
-        .about-text p{
-            /* padding-right: 800px; */
-            margin-left: 20px;
-
-            font-size: 1.5rem;
-            line-height: 2rem;
-            /* margin-top: 20px; */
-
-
-            
-        }
-
-        .title img{
-            height: 120px;
-            margin-left: 7rem;
-        }
-
-        .text .title{
-            display: flex;
-        }
-
-
-
-.proj {
+.about {
     display: grid;
+
 
 }
 
-.overlay {
+.intro {
     display: grid;
+    height: 110vh;
+
+}
+
+.intro #hero {
+    display: grid;
+    place-self: end start;
     grid-area: 1/1;
-    background: #01112e1e;
-    background-blend-mode: darken;
-    backdrop-filter: blur(2px);
+    height: 70vh;
+    margin-left: 50px;
+
+    margin-bottom: 120px;
 }
 
-.image {
+.about-text {
     display: grid;
+    /* grid-template-rows: 1.3fr 2fr 0.5fr; */
     grid-area: 1/1;
+    /* grid-template-columns: 0.25fr 2fr 0.2fr; */
+    margin-left: 200px;
+    /* place-content: center; */
+    place-self: center start;
+    margin-top: 20px;
+
+
+
+
+
 
 }
+
+.about-text h1 {
+    font-size: 8rem;
+    line-height: 1;
+}
+
+
+.about-text p {
+    /* padding-right: 800px; */
+    margin-left: 20px;
+
+    font-size: 1.5rem;
+    line-height: 2rem;
+    /* margin-top: 20px; */
+
+
+
+}
+
+title-img {
+    height: 120px;
+    margin-left: 7rem;
+}
+
+.text .title {
+    display: flex;
+}
+
+
+
+
+
+
 
 .modalo {
     background: #01112e5e;
@@ -164,7 +151,7 @@ nav {
     display: flex;
     position: fixed;
     width: 100%;
-    padding-top: 40px;
+    /* padding-top: 40px; */
     background-color: rgba(233, 234, 255, 0.4);
     backdrop-filter: blur(10px);
     padding-top: 2rem;
@@ -215,7 +202,7 @@ nav ul li a {
 .contact-button {
     border: 1px solid black;
     /* border-black border-[2px] */
-        border-radius: 1414px;
+    border-radius: 1414px;
     /* rounded-3xl */
     padding: 0.75rem 1.5rem;
     /* p-3 */
@@ -303,6 +290,724 @@ nav ul li a {
     background-color: #f5f5f5;
 }
 
+
+
+
+
+/* footer */
+
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #E9EAFF;
+    display: grid;
+    justify-items: center;
+}
+
+.footer-container {
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 40px;
+    place-items: center;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.footer-item a,
+.footer-item h1 {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .footer-item {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 15px 20px;
+    }
+
+    .footer-item a,
+    .footer-item h1 {
+        font-size: 14px;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 10px;
+    }
+
+    .footer-item a,
+    .footer-item h1 {
+        font-size: 12px;
+    }
+
+    .icon {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+
+
+/* Projects */
+.project-container {
+    display: grid;
+    gap: 200px;
+    padding-bottom: 5rem;
+
+}
+
+.project-intro {
+    margin-left: 8rem;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+}
+
+.project-intro h1 {
+    font-size: 3.75rem
+        /* 60px */
+    ;
+    line-height: 1;
+
+}
+
+.project-intro p {
+    font-size: 1.5rem
+        /* 24px */
+    ;
+    line-height: 2rem
+        /* 32px */
+    ;
+    line-height: 2.25rem
+        /* 36px */
+    ;
+    letter-spacing: 0.1em;
+
+
+}
+
+.first {
+
+    margin-left: 150px;
+    place-self: end;
+
+
+}
+
+.second {
+    margin-left: 150px;
+    place-self: start;
+}
+
+.third {
+    margin-left: 150px;
+    place-self: end;
+}
+
+
+.proj-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.proj-text h1 {
+    margin-top: 1.25rem
+        /* 20px */
+    ;
+    font-size: 1.5rem
+        /* 24px */
+    ;
+    line-height: 2rem
+        /* 32px */
+    ;
+    font-weight: 600;
+
+}
+
+.proj-text p {
+    margin-left: 1.25rem;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    width: 900px;
+
+}
+
+
+.overlay {
+    display: grid;
+    grid-area: 1/1;
+    background: #01112e1e;
+    background-blend-mode: darken;
+    backdrop-filter: blur(2px);
+}
+
+.image {
+    display: grid;
+    grid-area: 1/1;
+
+}
+
+.image img {
+    width: 70vw;
+
+}
+
+.overlay div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+
+.overlay div img {}
+
+
+.progress {
+    width: 50%;
+    height: 10vh;
+    background-color: #e9bfbf;
+    display: grid;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 0.5rem;
+    grid-area: 1/1;
+}
+
+.progress h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: grid;
+    place-self: center;
+}
+
+
+.expand {
+    grid-area: 1/1;
+    place-items: center;
+}
+
+.image-div {
+    display: grid;
+    width: 100%;
+}
+
+/* .expand-image img {
+    height: 60px;
+} */
+
+/* Responsive adjustments */
+
+@media (min-width: 450px) {
+
+    /* Further reduce margins */
+    .project-intro {
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
+    .project-container {
+        gap: 50px;
+        /* Further reduce gap */
+    }
+
+    /* Smaller text for mobile */
+    .proj-text h1 {
+        font-size: 1rem;
+        /* 16px */
+    }
+
+    .proj-text p {
+        font-size: 0.75rem;
+        /* 12px */
+        line-height: 1.25rem;
+        /* 20px */
+        width: 80%;
+    }
+
+    /* Adjust overlay content on mobile */
+    .overlay div {
+        gap: 0.5rem;
+    }
+
+    .progress {
+        width: 90%;
+        /* Make progress bar full width on mobile */
+    }
+
+    .progress h1 {
+        font-size: 1rem;
+        /* 16px */
+    }
+
+    /* .expand-image img {
+        height: 20px;
+    } */
+
+
+}
+
+@media (max-width: 768px) {
+
+    /* Further reduce margins */
+    .project-intro {
+        margin-left: 1rem;
+        margin-top: 7rem;
+        gap: 10px;
+    }
+
+    .arrow img {
+        place-self: start;
+        margin-left: -1rem;
+        margin-bottom: 0rem;
+        height: 70px;
+        transform: rotate(50deg);
+
+    }
+
+    .project-intro h1 {
+        font-size: 1.3rem;
+        /* 40px */
+    }
+
+    .project-intro p {
+        font-size: 0.7rem;
+        line-height: 0.8rem;
+        margin-bottom: -1rem;
+
+        /* 20px */
+    }
+
+    .project-container {
+        gap: 50px;
+        /* Further reduce gap */
+    }
+
+    .first {
+
+        margin-left: 0px;
+        width: 80%;
+
+        place-self: center;
+
+
+    }
+
+    .second {
+        margin-left: 0px;
+        width: 80%;
+
+        place-self: center;
+    }
+
+    .third {
+        margin-left: 0px;
+        width: 80%;
+
+        place-self: center;
+    }
+
+    /* Smaller text for mobile */
+    .proj-text h1 {
+        line-height: 0.7rem;
+        margin-top: 10px;
+        font-size: 0.7rem;
+        /* 16px */
+    }
+
+    .proj-text p {
+        font-size: 0.6rem;
+
+        /* 12px */
+        line-height: 0.7rem;
+        /* 20px */
+        width: 80%;
+    }
+
+    .image img {
+        width: 100%;
+
+    }
+
+    /* Adjust overlay content on mobile */
+    .overlay {
+        /* width: 98%; */
+    }
+
+
+
+    .progress {
+        width: 50%;
+        height: 4vh;
+        /* Make progress bar full width on mobile */
+    }
+
+    .progress h1 {
+        font-size: 0.6rem;
+        /* 16px */
+    }
+
+
+
+    .expand-image img {
+        height: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* Stack project intro and reduce margins */
+    .project-intro {
+        margin-left: 4rem;
+        margin-top: 3rem;
+        gap: 20px;
+    }
+
+    .arrow img {
+        place-self: start;
+        margin-left: rem;
+        margin-bottom: 0rem;
+        height: 100px;
+        transform: rotate(40deg);
+
+    }
+
+    .project-intro h1 {
+        font-size: 2.5rem;
+        /* 40px */
+    }
+
+    .project-intro p {
+        font-size: 1.25rem;
+        margin-bottom: -2rem;
+
+        /* 20px */
+    }
+
+    .project-container {
+        gap: 100px;
+        /* Reduce gap between projects */
+    }
+
+    .first {
+
+        margin-left: 0px;
+        width: 70%;
+        place-self: center;
+
+
+    }
+
+    .second {
+        margin-left: 0px;
+        width: 70%;
+        place-self: center;
+    }
+
+    .third {
+        margin-left: 0px;
+        width: 70%;
+        place-self: center;
+    }
+
+    /* Adjust images for smaller screens */
+    .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-div {
+        width: 100%;
+    }
+
+    /* Adjust text */
+    .proj-text h1 {
+        font-size: 1.25rem;
+        /* 20px */
+    }
+
+    .proj-text p {
+        font-size: 0.875rem;
+
+        width: 600px;
+
+
+
+        /* 14px */
+    }
+
+    /* Adjust overlay content */
+    .overlay div {
+        gap: 1rem;
+    }
+
+    .progress {
+        width: 40%;
+        place-self: start center;
+        height: 20%;
+        /* Increase progress bar width */
+    }
+
+    .progress h1 {
+        font-size: 1rem;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    .project-container {
+        display: grid;
+        gap: 100px;
+        padding-bottom: 5rem;
+
+    }
+
+
+    /* Adjust intro and project text */
+    .project-intro {
+        margin-left: 4rem;
+        margin-top: 5rem;
+        gap: 10px;
+    }
+
+    .arrow img {
+        place-self: start;
+        margin-left: 5rem;
+        margin-bottom: -10rem;
+        height: 200px;
+        transform: rotate(0deg);
+
+    }
+
+    .project-intro h1 {
+        font-size: 2.5rem;
+        /* 40px */
+    }
+
+    .project-intro p {
+        font-size: 1.25rem;
+        margin-bottom: -2rem;
+
+        /* 20px */
+    }
+
+    .proj-text p {
+        font-size: 0.7rem;
+        /* 16px */
+        line-height: 1rem;
+        /* 24px */
+
+        width: 600px;
+
+    }
+
+    .proj-text h1 {
+        font-size: 0.8rem;
+        /* 16px */
+        line-height: 1rem;
+        /* 24px */
+
+        width: 600px;
+
+    }
+
+    /* adjust placement of projects */
+
+    .first {
+
+        margin-left: 80px;
+        place-self: end;
+
+
+    }
+
+    .second {
+        margin-left: 80px;
+        place-self: start;
+    }
+
+    .third {
+        margin-left: 80px;
+        place-self: end;
+    }
+
+    /* Adjust image size */
+    .image img {
+        width: 70vw;
+        /* Make image full width on smaller screens */
+        height: auto;
+    }
+
+    .overlay div {
+        gap: 1.5rem;
+        /* Reduce gap in overlay */
+    }
+
+    .progress {
+        width: 40%;
+        place-self: start center;
+        height: 20%;
+        /* Increase progress bar width */
+    }
+
+    .progress h1 {
+        font-size: 1rem;
+    }
+
+    .image-div {
+        width: 90%;
+    }
+}
+
+
+@media (min-width: 1440px) {
+
+    .project-container {
+        display: grid;
+        gap: 100px;
+        padding-bottom: 5rem;
+
+    }
+
+
+    /* Adjust intro and project text */
+    .project-intro {
+        margin-left: 5rem;
+        margin-top: 10rem;
+        gap: 10px;
+
+    }
+
+    .arrow {
+        height: 100px;
+    }
+
+    .arrow img {
+        place-self: start;
+        margin-left: 7rem;
+        margin-bottom: -9rem;
+        height: 250px;
+    }
+
+    .project-intro h1 {
+        font-size: 3.5rem;
+        /* margin-bottom: -10px; */
+        /* 40px */
+    }
+
+    .project-intro p {
+        font-size: 1.5rem;
+        margin-bottom: -60px;
+
+        /* 20px */
+    }
+
+    .proj-text p {
+        font-size: 1.125rem;
+        /* 16px */
+        line-height: 1.5rem;
+        /* 24px */
+
+        width: 900px;
+
+    }
+
+    .proj-text h1 {
+        font-size: 1.5rem;
+        /* 16px */
+        line-height: 1.5rem;
+        /* 24px */
+
+
+    }
+
+    /* adjust placement of projects */
+
+    .first {
+
+        place-self: end;
+
+
+    }
+
+    .second {
+        place-self: start;
+    }
+
+    .third {
+        place-self: end;
+    }
+
+    /* Adjust image size */
+    .image img {
+        width: 70vw;
+        /* Make image full width on smaller screens */
+        height: auto;
+    }
+
+    .image-div {
+        width: 90%;
+    }
+
+    .overlay div {
+        gap: 1.5rem;
+        /* Reduce gap in overlay */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 650px) {
     .hamburger {
         display: block;
@@ -313,13 +1018,13 @@ nav ul li a {
     }
 
     nav .logo h1 {
-            font-size: 1.2rem;
-            /* text-[2.3em] */
-            letter-spacing: 0.05em;
-            /* tracking-wide */
-            font-weight: 500;
-            /* font-medium */
-        }
+        font-size: 1.2rem;
+        /* text-[2.3em] */
+        letter-spacing: 0.05em;
+        /* tracking-wide */
+        font-weight: 500;
+        /* font-medium */
+    }
 
 
 }
@@ -328,272 +1033,277 @@ nav ul li a {
 
 /* Tablets and small desktops */
 @media screen and (min-width: 650px) {
+
     /* styles */
     nav .logo h1 {
-            font-size: 1.5em;
-            /* text-[2.3em] */
-            letter-spacing: 0.05em;
-            /* tracking-wide */
-            font-weight: 500;
-            /* font-medium */
-        }
+        font-size: 1.5em;
+        /* text-[2.3em] */
+        letter-spacing: 0.05em;
+        /* tracking-wide */
+        font-weight: 500;
+        /* font-medium */
+    }
 
-        nav ul li a {
-            /* gap-20 */
-            font-size: 1em;
-            /* text-[1.2em] */
-            font-weight: 300;
-    
-        }
+    nav ul li a {
+        /* gap-20 */
+        font-size: 1em;
+        /* text-[1.2em] */
+        font-weight: 300;
 
-        
+    }
 
-                 .intro #hero {
-                     height: 30vh;
-                     margin-bottom: 180px;
 
-                     /* place-self: center start; */
-        
-                 }
-        
-                 .about-text h1 {
-                     font-size: 4rem;
-                     line-height: 1;
-                 }
-        
-        
-                 .text p {
-                     /* padding-right: 800px; */
-                     margin-top: 20px;
-                     margin-left: 20px;
-        
-                     font-size: 1rem;
-                     line-height: 1.3rem;
-                     width: 50%;
-        
-        
-                 }
-        
-                 .about-text {
-                     margin-left: 150px;
-                     place-self: center;
-                    margin-top: 15px;
-                 }
-        
-                 .title img {
-                     height: 50px;
-                     margin-left: 2rem;
-                 }
+
+    .intro #hero {
+        height: 30vh;
+        margin-bottom: 180px;
+
+        /* place-self: center start; */
+
+    }
+
+    .about-text h1 {
+        font-size: 4rem;
+        line-height: 1;
+    }
+
+
+    .text p {
+        /* padding-right: 800px; */
+        margin-top: 20px;
+        margin-left: 20px;
+
+        font-size: 1rem;
+        line-height: 1.3rem;
+        width: 50%;
+
+
+    }
+
+    .about-text {
+        margin-left: 150px;
+        place-self: center;
+        margin-top: 15px;
+    }
+
+    title-img {
+        height: 50px;
+        margin-left: 2rem;
+    }
 }
 
 /* Medium desktops */
 @media screen and (min-width: 1024px) {
+
     /* styles */
     nav .logo h1 {
-            font-size: 1.2em;
-            /* text-[2.3em] */
-            letter-spacing: 0.04em;
-            /* tracking-wide */
-            font-weight: 500;
-            /* font-medium */
-        }
-    
-        nav ul li a {
-            /* gap-20 */
-            font-size: 0.7em;
-            /* text-[1.2em] */
-            font-weight: 300;
-    
-        }
+        font-size: 1.2em;
+        /* text-[2.3em] */
+        letter-spacing: 0.04em;
+        /* tracking-wide */
+        font-weight: 500;
+        /* font-medium */
+    }
 
-        nav{
+    nav ul li a {
+        /* gap-20 */
+        font-size: 0.7em;
+        /* text-[1.2em] */
+        font-weight: 300;
 
-            padding-top: 20px;
+    }
 
-        }
+    nav {
+
+        padding-top: 20px;
+
+    }
 
 
-        .contact-button{
-            padding: 10px 10px;
-        }
+    .contact-button {
+        padding: 10px 10px;
+    }
 
-       
 
-                .intro #hero{
-                    height: 50vh;
-                    margin-bottom: 180px;
 
-                }
-                 .about-text h1 {
-                     font-size: 4rem;
-                     line-height: 1;
-                 }
-        
-        
-                 .text p {
-                     /* padding-right: 800px; */
-                     margin-top: 20px;
-                     margin-left: 20px;
-        
-                     font-size: 1rem;
-                     line-height: 1.3rem;
-                    width: 54%;
-        
-        
-                 }
+    .intro #hero {
+        height: 50vh;
+        margin-bottom: 180px;
 
-                 .about-text{
-                    margin-left: 150px;
-                 }
-        
-                 .title img {
-                     height: 50px;
-                     margin-left: 2rem;
-                 }
+    }
 
-               
+    .about-text h1 {
+        font-size: 4rem;
+        line-height: 1;
+    }
+
+
+    .text p {
+        /* padding-right: 800px; */
+        margin-top: 20px;
+        margin-left: 20px;
+
+        font-size: 1rem;
+        line-height: 1.3rem;
+        width: 54%;
+
+
+    }
+
+    .about-text {
+        margin-left: 150px;
+    }
+
+    title-img {
+        height: 50px;
+        margin-left: 2rem;
+    }
+
+
 }
 
 @media screen and (min-width: 1200px) {
 
     nav .logo h1 {
-            font-size: 1.8em;
-            /* text-[2.3em] */
-            letter-spacing: 0.04em;
-            /* tracking-wide */
-            font-weight: 500;
-            /* font-medium */
-        }
-    
-        nav ul li a {
-            /* gap-20 */
-            font-size: 0.9em;
-            /* text-[1.2em] */
-            font-weight: 300;
-    
-        }
-    
-        nav {
-    
-            padding-top: 20px;
-    
-        }
+        font-size: 1.8em;
+        /* text-[2.3em] */
+        letter-spacing: 0.04em;
+        /* tracking-wide */
+        font-weight: 500;
+        /* font-medium */
+    }
+
+    nav ul li a {
+        /* gap-20 */
+        font-size: 0.9em;
+        /* text-[1.2em] */
+        font-weight: 300;
+
+    }
+
+    nav {
+
+        padding-top: 20px;
+
+    }
 
 
     .intro #hero {
-            height: 60vh;
-            margin-bottom: 100px;
-
-            
-        }
-
-         .about-text h1 {
-             font-size: 5rem;
-             line-height: 1;
-         }
-    
-    
-        
-    
-         .title img {
-             height: 70px;
-             margin-left: 2rem;
-         }
-    
-         .text p {
-             width: 50%;
-              margin-left: 20px;
-    
-             font-size: 1.2rem;
-             line-height: 1.5rem;
-             margin-top: 20px;
-         }
-
-         .about-text{
-            margin-left: 150px;
-            margin-top: 150px;
-         }
-
-    
+        height: 60vh;
+        margin-bottom: 100px;
 
 
-    
-    
+    }
+
+    .about-text h1 {
+        font-size: 5rem;
+        line-height: 1;
+    }
+
+
+
+
+    title-img {
+        height: 70px;
+        margin-left: 2rem;
+    }
+
+    .text p {
+        width: 50%;
+        margin-left: 20px;
+
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        margin-top: 20px;
+    }
+
+    .about-text {
+        margin-left: 150px;
+        margin-top: 150px;
+    }
+
+
+
+
+
+
 }
 
 /* Large desktops */
 @media screen and (min-width: 1440px) {
+
     /* styles */
     nav .logo h1 {
-            font-size: 2.3em;
-            /* text-[2.3em] */
-            letter-spacing: 0.05em;
-            /* tracking-wide */
-            font-weight: 500;
-            /* font-medium */
-        }
-    
-        nav ul li a {
-            /* gap-20 */
-            font-size: 1.4em;
-            /* text-[1.2em] */
-            font-weight: 300;
-    
-        }
-    nav ul{
+        font-size: 2.3em;
+        /* text-[2.3em] */
+        letter-spacing: 0.05em;
+        /* tracking-wide */
+        font-weight: 500;
+        /* font-medium */
+    }
+
+    nav ul li a {
+        /* gap-20 */
+        font-size: 1.4em;
+        /* text-[1.2em] */
+        font-weight: 300;
+
+    }
+
+    nav ul {
         gap: 60px;
     }
 
-    nav{
+    nav {
 
         padding: 40px 100px;
     }
 
-         .intro #hero {
-             height: 70vh;
-             margin-bottom: 120px;
-         }
+    .intro #hero {
+        height: 70vh;
+        margin-bottom: 120px;
+    }
 
-  
-         .about-text h1 {
-             font-size: 6.5rem;
-         }
-    
-    
-         .about-text p {
-             /* padding-right: 800px; */
-             margin-left: 20px;
-    
-             font-size: 1.8rem;
-             line-height: 2rem;
-    
-    
-    
-         }
-    
-         .title img {
-             height: 100px;
-             margin-left: 7rem;
-         }
 
-        .about-text p {
-            /* padding-right: 800px; */
-            margin-left: 20px;
-    
-            width: 50%;
-    
-    
-        }
+    .about-text h1 {
+        font-size: 6.5rem;
+    }
 
-        .abou-text{
-            /* margin-top: 120px ;
+
+    .about-text p {
+        /* padding-right: 800px; */
+        margin-left: 20px;
+
+        font-size: 1.8rem;
+        line-height: 2rem;
+
+
+
+    }
+
+    title-img {
+        height: 100px;
+        margin-left: 7rem;
+    }
+
+    .about-text p {
+        /* padding-right: 800px; */
+        margin-left: 20px;
+
+        width: 50%;
+
+
+    }
+
+    .abou-text {
+        /* margin-top: 120px ;
             margin-left: 400px; */
-        }
+    }
 
-  
 
-    
-    
+
+
+
 
 
 }
@@ -603,26 +1313,24 @@ nav ul li a {
     /* styles */
 
     nav .logo h1 {
-            font-size: 2.5em;
-            /* text-[2.3em] */
-            letter-spacing: 0.05em;
-            /* tracking-wide */
-            font-weight: 500;
-            /* font-medium */
-        }
-    
-        nav ul li a {
-            /* gap-20 */
-            font-size: 1.8em;
-            /* text-[1.2em] */
-            font-weight: 300;
-    
-        }
+        font-size: 2.5em;
+        /* text-[2.3em] */
+        letter-spacing: 0.05em;
+        /* tracking-wide */
+        font-weight: 500;
+        /* font-medium */
+    }
 
-    nav ul{
+    nav ul li a {
+        /* gap-20 */
+        font-size: 1.8em;
+        /* text-[1.2em] */
+        font-weight: 300;
+
+    }
+
+    nav ul {
         gap: 100px;
     }
 
 }
-
-

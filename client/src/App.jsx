@@ -6,11 +6,11 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="bg-[#f4f1f76e] overflow">
+    <div className="bg-[#f4f1f76e] ">
 
       <Navbar />
       <Home />
-      {/* <Footer /> */}
+      <Footer />
 
     </div>
   );
