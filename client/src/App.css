@@ -1321,6 +1321,8 @@ nav ul li a {
 
 /* Project Modal */
 
+/* Project Modal */
+
 .modal-bg {
     background: #01112e5e;
     background-blend-mode: darken;
@@ -1328,15 +1330,15 @@ nav ul li a {
     z-index: 200000;
 
     position: fixed;
-        height: 100%;
-        top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        left: 0;
-        width: 100vw;
-        transition: ease-out;
-            z-index: 30000000;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    width: 100vw;
+    transition: ease-out;
+    z-index: 30000000;
 
 }
 
@@ -1344,67 +1346,67 @@ nav ul li a {
     transition: ease-out;
     z-index: 30000000;
     position: fixed;
-        color: black;
-        font-size: 1.25rem;
-        /* This is the equivalent of 'text-xl' */
-        height: 90vh;
-        top: 5vh;
-        left: 5vw;
-        width: 90vw;
-        background-color: white;
-        border-radius: 0.5rem;
-        /* This is the equivalent of 'rounded-lg' */
+    color: black;
+    font-size: 1.25rem;
+    /* This is the equivalent of 'text-xl' */
+    height: 90vh;
+    top: 5vh;
+    left: 5vw;
+    width: 90vw;
+    background-color: white;
+    border-radius: 0.5rem;
+    /* This is the equivalent of 'rounded-lg' */
 
 
 }
 
-.content-name{
+.content-name {
     display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        /* This defines 3 equal-width columns */
-        height: 10vh;
+    grid-template-columns: repeat(3, 1fr);
+    /* This defines 3 equal-width columns */
+    height: 10vh;
 }
 
-.names-div{
+.names-div {
     display: grid;
-        place-self: center;
-        /* Centers the element in its grid container */
-        overflow: hidden;
+    place-self: center;
+    /* Centers the element in its grid container */
+    overflow: hidden;
 }
 
-.names-container{
+.names-container {
     display: flex;
     width: 616px;
 
 }
 
-.name{
+.name {
     text-align: center;
     min-width: 600px;
-    
+
 }
 
-.arrow1{
-        display: grid;
+.arrow1 {
+    display: grid;
     z-index: 20;
-        border-radius: 50%;
-        /* Fully round shape */
-        background-color: #ddd6fe;
-        /* Equivalent of 'bg-violet-200' */
-        height: 40px;
-        width: 40px;
+    border-radius: 50%;
+    /* Fully round shape */
+    background-color: #ddd6fe;
+    /* Equivalent of 'bg-violet-200' */
+    height: 40px;
+    width: 40px;
 }
 
-.arrow1 img{
+.arrow1 img {
     cursor: pointer;
-        transform: rotate(180deg);
-        /* Rotates the element 180 degrees */
-        height: 25px;
-            place-self: center;
+    transform: rotate(180deg);
+    /* Rotates the element 180 degrees */
+    height: 25px;
+    place-self: center;
 }
 
 
-.arrow2 { 
+.arrow2 {
     display: grid;
     z-index: 20;
     border-radius: 50%;
@@ -1417,41 +1419,80 @@ nav ul li a {
 
 .arrow2 img {
     cursor: pointer;
-   
+
     height: 25px;
     place-self: center;
 }
 
-.decora-div{
+.decora-div {
     display: grid;
-        /* place-content: center; */
-        /* Centers content both horizontally and vertically */
-        margin-top: 2rem;
-        /* Equivalent of 'my-8' (margin-y: 8) */
-        margin-bottom: 1rem;
-        /* padding-top: 0.5rem; */
-        /* Equivalent of 'py-2' (padding-y: 2) */
-        /* padding-bottom: 0.5rem; */
-        margin-left: 10rem;
-        /* Equivalent of 'mx-40' (margin-x: 40) */
-        margin-right: 10rem;
-        border: 2px solid #d1c0c0;
-        /* Border with the specified color and width */
-        border-radius: 0.75rem;
-        /* Equivalent of 'rounded-xl' */
-        overflow: hidden;
-        /* Hides any overflowing content */
+    /* place-content: center; */
+    /* Centers content both horizontally and vertically */
+    margin-top: 2rem;
+    /* Equivalent of 'my-8' (margin-y: 8) */
+    margin-bottom: 1rem;
+    /* padding-top: 0.5rem; */
+    /* Equivalent of 'py-2' (padding-y: 2) */
+    /* padding-bottom: 0.5rem; */
+    margin-left: 10rem;
+    /* Equivalent of 'mx-40' (margin-x: 40) */
+    margin-right: 10rem;
+    border: 2px solid #d1c0c0;
+    /* Border with the specified color and width */
+    border-radius: 0.75rem;
+    /* Equivalent of 'rounded-xl' */
+    overflow: hidden;
+    /* Hides any overflowing content */
 }
 
-.decora-div div{
+.decora-div div {
     display: flex;
     /* place-items: center; */
-        /* gap: 1.25rem; */
-        /* 5 x 0.25rem (1rem = 16px) */
-        /* margin-left: 1rem; */
+    /* gap: 1.25rem; */
+    /* 5 x 0.25rem (1rem = 16px) */
+    /* margin-left: 1rem; */
 }
 
-.decora-vid{
+.decora-vid {
     width: 100%;
     place-content: center;
+}
+
+.stable {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+    .modal-content {
+        transform: rotate(90deg);
+        transform-origin: center;
+
+        /* Swap width and height to ensure it fits in the parent */
+        width: 100vh;
+        /* Height becomes width */
+        height: 90vw;
+        /* Width becomes height */
+
+        /* Make sure the element is centered after the rotation */
+        position: absolute;
+        /* Take it out of document flow */
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%) rotate(90deg);
+
+        font-size: 1rem;
+
+        /* Center it */
+
+    }
+
+    .decora-div {
+        margin-right: 8rem;
+        margin-left: 8rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+
 }

@@ -59,20 +59,21 @@ export default function ProjectMedia({ current, setcurrent }) {
 
         if (current == 'decora' && slides) {
 
-            return <div className='decora-div '>
-                <div
-                    className='best'
-                    style={{ transform: `translateX(-${slide * 100}%)` }} // Calculating the translate
-                >
+            return <div className='modal-center'>
+                <div className='decora-div '>
+                    <div
+                        className='best'
+                        style={{ transform: `translateX(-${slide * 100}%)` }} // Calculating the translate
+                    >
 
-                    {slides.map((item, index) => (
-                        <video key={index} className='decora-vid' autoPlay loop muted playsInline>
-                            <source src={item} type="video/mp4" />
-                        </video>
-                    ))}
-                </div>
+                        {slides.map((item, index) => (
+                            <video key={index} className='decora-vid' autoPlay loop muted playsInline>
+                                <source src={item} type="video/mp4" />
+                            </video>
+                        ))}
+                    </div>
 
-            </div>
+                </div></div>
 
 
 
@@ -124,49 +125,54 @@ export default function ProjectMedia({ current, setcurrent }) {
 
 
 
-                {handleContent()}
+
+                <div className='stable'>
+                    <div className="modal-content">
+                        {handleContent()}
 
 
-                <div className='content-name '>
-                    {/* arrow left */}
-                    <div className={current == 'odoo' ? ' hidden' : 'center-end '}>
-                        <div 
-                        className={slide == 0 ? ' arrow1  opacity-50 ' 
-                        :
-                         ' arrow1 '} 
-                         onClick={() => handleslides('left')}>
-                            <img className="  " src={forward} alt="" />
+                        <div className='content-name '>
+                            {/* arrow left */}
+                            <div className={current == 'odoo' ? ' hidden' : 'center-end '}>
+                                <div
+                                    className={slide == 0 ? ' arrow1  opacity-50 '
+                                        :
+                                        ' arrow1 '}
+                                    onClick={() => handleslides('left')}>
+                                    <img className="  " src={forward} alt="" />
+                                </div>
+
                             </div>
 
-                    </div>
+                            {/* names */}
+                            <div className='names-div'>
 
-                    {/* names */}
-                    <div className='names-div'>
+                                <div className='names-container best'
+                                    style={{ transform: `translateX(-${slide * 600}px)` }}>
+                                    {titles ? titles.map((item, index) => {
+                                        return <h1 key={index} className='name'>
+                                            {item}
+                                        </h1>
 
-                        <div className='names-container best'
-                            style={{ transform: `translateX(-${slide * 600}px)` }}>
-                            {titles ? titles.map((item, index) => {
-                                return <h1 key={index} className='name'>
-                                    {item}
-                                </h1>
+                                    }) : null}
+                                </div>
 
-                            }) : null}
+                            </div>
+
+                            {/* arrow right */}
+                            <div
+                                className={current == 'odoo' ? 'hidden' : 'center-start'}>
+                                <div
+                                    className={slides.length - 1 != slide ?
+                                        ' arrow2   '
+                                        :
+                                        ' arrow2 opacity-50 '}
+                                    onClick={() => handleslides('right')}>
+                                    <img className="" src={forward} alt="" />
+                                </div>
+
+                            </div>
                         </div>
-
-                    </div>
-                    
-                    {/* arrow right */}
-                    <div 
-                    className={current == 'odoo' ? 'hidden' : 'center-start'}>
-                        <div
-                        className={slides.length - 1 != slide ? 
-                        ' arrow2   ' 
-                        : 
-                        ' arrow2 opacity-50 '} 
-                        onClick={() => handleslides('right')}>
-                            <img className="" src={forward} alt="" />
-                            </div>
-
                     </div>
                 </div>
             </div>
