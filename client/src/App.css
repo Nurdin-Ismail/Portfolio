@@ -77,25 +77,6 @@ title-img {
 
 
 
-
-
-
-
-.modalo {
-    background: #01112e5e;
-    background-blend-mode: darken;
-    backdrop-filter: blur(2px);
-    z-index: 200000;
-
-}
-
-.modal {
-    transition: ease-out;
-    z-index: 30000000;
-
-
-}
-
 .best {
     transition: all 1.5s ease-in-out;
 
@@ -1333,4 +1314,144 @@ nav ul li a {
         gap: 100px;
     }
 
+}
+
+
+
+
+/* Project Modal */
+
+.modal-bg {
+    background: #01112e5e;
+    background-blend-mode: darken;
+    backdrop-filter: blur(2px);
+    z-index: 200000;
+
+    position: fixed;
+        height: 100%;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        width: 100vw;
+        transition: ease-out;
+            z-index: 30000000;
+
+}
+
+.modal {
+    transition: ease-out;
+    z-index: 30000000;
+    position: fixed;
+        color: black;
+        font-size: 1.25rem;
+        /* This is the equivalent of 'text-xl' */
+        height: 90vh;
+        top: 5vh;
+        left: 5vw;
+        width: 90vw;
+        background-color: white;
+        border-radius: 0.5rem;
+        /* This is the equivalent of 'rounded-lg' */
+
+
+}
+
+.content-name{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* This defines 3 equal-width columns */
+        height: 10vh;
+}
+
+.names-div{
+    display: grid;
+        place-self: center;
+        /* Centers the element in its grid container */
+        overflow: hidden;
+}
+
+.names-container{
+    display: flex;
+    width: 616px;
+
+}
+
+.name{
+    text-align: center;
+    min-width: 600px;
+    
+}
+
+.arrow1{
+        display: grid;
+    z-index: 20;
+        border-radius: 50%;
+        /* Fully round shape */
+        background-color: #ddd6fe;
+        /* Equivalent of 'bg-violet-200' */
+        height: 40px;
+        width: 40px;
+}
+
+.arrow1 img{
+    cursor: pointer;
+        transform: rotate(180deg);
+        /* Rotates the element 180 degrees */
+        height: 25px;
+            place-self: center;
+}
+
+
+.arrow2 { 
+    display: grid;
+    z-index: 20;
+    border-radius: 50%;
+    /* Fully round shape */
+    background-color: #ddd6fe;
+    /* Equivalent of 'bg-violet-200' */
+    height: 40px;
+    width: 40px;
+}
+
+.arrow2 img {
+    cursor: pointer;
+   
+    height: 25px;
+    place-self: center;
+}
+
+.decora-div{
+    display: grid;
+        /* place-content: center; */
+        /* Centers content both horizontally and vertically */
+        margin-top: 2rem;
+        /* Equivalent of 'my-8' (margin-y: 8) */
+        margin-bottom: 1rem;
+        /* padding-top: 0.5rem; */
+        /* Equivalent of 'py-2' (padding-y: 2) */
+        /* padding-bottom: 0.5rem; */
+        margin-left: 10rem;
+        /* Equivalent of 'mx-40' (margin-x: 40) */
+        margin-right: 10rem;
+        border: 2px solid #d1c0c0;
+        /* Border with the specified color and width */
+        border-radius: 0.75rem;
+        /* Equivalent of 'rounded-xl' */
+        overflow: hidden;
+        /* Hides any overflowing content */
+}
+
+.decora-div div{
+    display: flex;
+    /* place-items: center; */
+        /* gap: 1.25rem; */
+        /* 5 x 0.25rem (1rem = 16px) */
+        /* margin-left: 1rem; */
+}
+
+.decora-vid{
+    width: 100%;
+    place-content: center;
 }
