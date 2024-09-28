@@ -88,7 +88,7 @@ body {
 
 /* Responsive adjustments for hero section */
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 500px) {
      .intro{
         height: 40vh;
     }
@@ -152,7 +152,7 @@ body {
 
 
 /* Tablets and small desktops */
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 500px) {
 
     /* styles */
 
@@ -160,84 +160,191 @@ body {
   
 
 
-    .intro #hero {
-        /* height: 30vh;
-        margin-bottom: 180px; */
+    .intro {
+            height: 42vh;
+        }
+    
+        .intro #hero {
+            display: block;
+            max-width: 80%;
+            max-height: 63%;
+            place-self: end start;
+            grid-area: 1/1;
+            /* margin-left: 50px; */
+    
+            margin-bottom: 20px;
+            margin-left: 2%;
+        }
+    
+        .about-text {
+            display: grid;
+            grid-area: 1/1;
+            margin-left: 60px;
+            place-self: center start;
+            margin-bottom: -100px;
+    
+    
+    
+    
+    
+    
+        }
+    
+        .about-text h1 {
+            font-size: 2.8rem;
+            line-height: 1;
+        }
+    
+    
+        .about-text p {
+            /* padding-right: 800px; */
+            margin-left: 2px;
+    
+            font-size: 0.8rem;
+            line-height: 1rem;
+            margin-top: 2px;
+            width: 60%;
+    
+    
+    
+        }
+    
+        .title-img {
+            height: 45px;
+            margin-left: 0.6rem;
+            display: grid;
+            place-self: center;
+        }
+}
 
-        /* place-self: center start; */
+@media screen and (min-width: 768px) {
+
+    /* styles */
+
+
+
+
+
+    .intro {
+        min-height: 70vh;
+    }
+
+    .intro #hero {
+        display: block;
+        max-width: 80%;
+        max-height: 63%;
+        place-self: end start;
+        grid-area: 1/1;
+        /* margin-left: 50px; */
+
+        margin-bottom: 20px;
+        margin-left: 2%;
+    }
+
+    .about-text {
+        display: grid;
+        grid-area: 1/1;
+        margin-left: 60px;
+        place-self: center start;
+        margin-bottom: -100px;
+
+
+
+
+
 
     }
 
     .about-text h1 {
-        /* font-size: 4rem;
-        line-height: 1; */
+        font-size: 2.8rem;
+        line-height: 1;
     }
 
 
-    .text p {
+    .about-text p {
         /* padding-right: 800px; */
-        /* margin-top: 20px;
-        margin-left: 20px;
+        margin-left: 2px;
 
-        font-size: 1rem;
-        line-height: 1.3rem;
-        width: 50%; */
+        font-size: 0.8rem;
+        line-height: 1rem;
+        margin-top: 2px;
+        width: 60%;
 
 
-    }
 
-    .about-text {
-        /* margin-left: 150px;
-        place-self: center;
-        margin-top: 15px; */
     }
 
     .title-img {
-        /* height: 50px;
-        margin-left: 2rem; */
+        height: 45px;
+        margin-left: 0.6rem;
+        display: grid;
+        place-self: center;
     }
 }
 
 /* Medium desktops */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-height: 900px) {
 
     /* styles */
     
 
 
 
-    .intro #hero {
-        /* height: 50vh;
-        margin-bottom: 180px; */
-
-    }
-
-    .about-text h1 {
-        /* font-size: 4rem;
-        line-height: 1; */
-    }
-
-
-    .text p {
-        /* padding-right: 800px; */
-        /* margin-top: 20px;
-        margin-left: 20px;
-
-        font-size: 1rem;
-        line-height: 1.3rem;
-        width: 54%; */
-
-
-    }
-
-    .about-text {
-        /* margin-left: 150px; */
-    }
-
-    .title-img {
-        /* height: 50px;
-        margin-left: 2rem; */
-    }
+    .intro {
+            height: 110vh;
+        }
+    
+        .intro #hero {
+            display: block;
+            max-width: 80%;
+            /* max-height: 63%; */
+            place-self: end start;
+            grid-area: 1/1;
+            /* margin-left: 50px; */
+    
+            margin-bottom: 100px;
+            margin-left: 2%;
+        }
+    
+        .about-text {
+            display: grid;
+            grid-area: 1/1;
+            margin-left: 100px;
+            place-self: center start;
+            margin-bottom: -40px;
+    
+    
+    
+    
+    
+    
+        }
+    
+        .about-text h1 {
+            font-size: 4.8rem;
+            line-height: 1;
+        }
+    
+    
+        .about-text p {
+            /* padding-right: 800px; */
+            margin-left: 12px;
+    
+            font-size: 1rem;
+            line-height: 1.6rem;
+            margin-top: 2px;
+            width: 50%;
+    
+    
+    
+        }
+    
+        .title-img {
+            height: 60px;
+            margin-left: 0.6rem;
+            display: grid;
+            place-self: center;
+        }
 
 
 }
@@ -247,41 +354,61 @@ body {
    
 
 
+.intro {
+        height: 110vh;
+    }
+
     .intro #hero {
-        /* height: 60vh;
-        margin-bottom: 100px; */
+        display: block;
+        max-width: 80%;
+        /* max-height: 63%; */
+        place-self: end start;
+        grid-area: 1/1;
+        /* margin-left: 50px; */
+
+        margin-bottom: 100px;
+        margin-left: 2%;
+    }
+
+    .about-text {
+        display: grid;
+        grid-area: 1/1;
+        margin-left: 120px;
+        place-self: center start;
+        margin-bottom: -120px;
+
+
+
+
 
 
     }
 
     .about-text h1 {
-        /* font-size: 5rem;
-        line-height: 1; */
+        font-size: 5.3rem;
+        line-height: 1;
     }
 
 
+    .about-text p {
+        /* padding-right: 800px; */
+        margin-left: 12px;
 
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        margin-top: 2px;
+        width: 50%;
+
+
+
+    }
 
     .title-img {
-        height: 70px;
-        margin-left: 2rem;
+        height: 60px;
+        margin-left: 0.6rem;
+        display: grid;
+        place-self: center;
     }
-
-    .text p {
-        /* width: 50%;
-        margin-left: 20px;
-
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-        margin-top: 20px; */
-    }
-
-    .about-text {
-        /* margin-left: 150px;
-        margin-top: 150px; */
-    }
-
-
 
 
 
@@ -293,46 +420,61 @@ body {
 
     /* styles */
   
-    .intro #hero {
-        /* height: 70vh;
-        margin-bottom: 120px; */
-    }
-
-
-    .about-text h1 {
-        /* font-size: 6.5rem; */
-    }
-
-
-    .about-text p {
-        /* padding-right: 800px; */
-        /* margin-left: 20px;
-
-        font-size: 1.8rem;
-        line-height: 2rem; */
-
-
-
-    }
-
-    .title-img {
-        height: 100px;
-        margin-left: 7rem;
-    }
-
-    .about-text p {
-        /* padding-right: 800px; */
-        /* margin-left: 20px;
-
-        width: 50%; */
-
-
-    }
-
-    .about-text {
-        /* margin-top: 120px ;
-            margin-left: 400px; */
-    }
+    .intro {
+            height: 110vh;
+        }
+    
+        .intro #hero {
+            display: block;
+            max-width: 80%;
+            /* max-height: 63%; */
+            place-self: end start;
+            grid-area: 1/1;
+            /* margin-left: 50px; */
+    
+            margin-bottom: 130px;
+            margin-left: 2%;
+        }
+    
+        .about-text {
+            display: grid;
+            grid-area: 1/1;
+            margin-left: 230px;
+            place-self: center start;
+            margin-bottom: -70px;
+    
+    
+    
+    
+    
+    
+        }
+    
+        .about-text h1 {
+            font-size: 7.3rem;
+            line-height: 1;
+        }
+    
+    
+        .about-text p {
+            /* padding-right: 800px; */
+            margin-left: 12px;
+    
+            font-size: 1.9rem;
+            line-height: 2.2rem;
+            margin-top: 2px;
+            width: 57%;
+    
+    
+    
+        }
+    
+        .title-img {
+            height: 90px;
+            margin-left: 0.6rem;
+            display: grid;
+            place-self: center;
+        }
 
 
 
