@@ -120,19 +120,19 @@ body {
         }
     
         .about-text h1 {
-            font-size: 2.2rem;
+            font-size: 2rem;
             line-height: 1;
         }
     
     
         .about-text p {
             /* padding-right: 800px; */
-            /* margin-left: 10px; */
+            margin-left: 10px;
     
             font-size: 0.7rem;
             line-height: 1rem;
             /* margin-top: 20px; */
-            width: 90%;
+            width: 96%;
     
     
     
@@ -140,7 +140,9 @@ body {
     
         .title-img {
             height: 30px;
-            margin-left: 1rem;
+            margin-left: 0.6rem;
+            display: grid;
+            place-self: center;
         }
 
 
