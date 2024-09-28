@@ -5,8 +5,8 @@
 
 body {
     font-family: "Inter", sans-serif;
-    margin: 0%;
-    padding: 0%;
+    /* margin: 0%;
+    padding: 0%; */
 }
 
 .best {
@@ -24,7 +24,7 @@ body {
 
 .intro {
     display: grid;
-    height: 110vh;
+    height: 108vh;
 
 }
 
@@ -32,8 +32,8 @@ body {
     display: grid;
     place-self: end start;
     grid-area: 1/1;
-    height: 70vh;
-    margin-left: 50px;
+    /* margin-left: 50px; */
+    max-height: 98%;
 
     margin-bottom: 120px;
 }
@@ -43,10 +43,10 @@ body {
     /* grid-template-rows: 1.3fr 2fr 0.5fr; */
     grid-area: 1/1;
     /* grid-template-columns: 0.25fr 2fr 0.2fr; */
-    margin-left: 200px;
+    /* margin-left: 200px; */
     /* place-content: center; */
-    place-self: center start;
-    margin-top: 20px;
+    /* place-self: center start; */
+    /* margin-top: 20px; */
 
 
 
@@ -54,6 +54,7 @@ body {
 
 
 }
+
 
 .about-text h1 {
     font-size: 8rem;
@@ -73,7 +74,7 @@ body {
 
 }
 
-title-img {
+.title-img {
     height: 120px;
     margin-left: 7rem;
 }
@@ -88,7 +89,61 @@ title-img {
 /* Responsive adjustments for hero section */
 
 @media screen and (max-width: 650px) {
+     .intro{
+        height: 40vh;
+    }
+
+        .intro #hero {
+            display: block;
+            max-width: 96%;
+            max-height: 60%;
+            place-self: end start;
+            grid-area: 1/1;
+            /* margin-left: 50px; */
     
+            margin-bottom: 20px;
+            margin-left: 2%;
+        }
+    
+        .about-text {
+            display: grid;
+            grid-area: 1/1;
+            margin-left: 60px;
+            place-self: center start;
+            margin-bottom: -100px;
+    
+    
+    
+    
+    
+    
+        }
+    
+        .about-text h1 {
+            font-size: 2.2rem;
+            line-height: 1;
+        }
+    
+    
+        .about-text p {
+            /* padding-right: 800px; */
+            /* margin-left: 10px; */
+    
+            font-size: 0.7rem;
+            line-height: 1rem;
+            /* margin-top: 20px; */
+            width: 90%;
+    
+    
+    
+        }
+    
+        .title-img {
+            height: 30px;
+            margin-left: 1rem;
+        }
+
+
 
 }
 
@@ -98,44 +153,46 @@ title-img {
 @media screen and (min-width: 650px) {
 
     /* styles */
+
+   
   
 
 
     .intro #hero {
-        height: 30vh;
-        margin-bottom: 180px;
+        /* height: 30vh;
+        margin-bottom: 180px; */
 
         /* place-self: center start; */
 
     }
 
     .about-text h1 {
-        font-size: 4rem;
-        line-height: 1;
+        /* font-size: 4rem;
+        line-height: 1; */
     }
 
 
     .text p {
         /* padding-right: 800px; */
-        margin-top: 20px;
+        /* margin-top: 20px;
         margin-left: 20px;
 
         font-size: 1rem;
         line-height: 1.3rem;
-        width: 50%;
+        width: 50%; */
 
 
     }
 
     .about-text {
-        margin-left: 150px;
+        /* margin-left: 150px;
         place-self: center;
-        margin-top: 15px;
+        margin-top: 15px; */
     }
 
-    title-img {
-        height: 50px;
-        margin-left: 2rem;
+    .title-img {
+        /* height: 50px;
+        margin-left: 2rem; */
     }
 }
 
@@ -148,36 +205,36 @@ title-img {
 
 
     .intro #hero {
-        height: 50vh;
-        margin-bottom: 180px;
+        /* height: 50vh;
+        margin-bottom: 180px; */
 
     }
 
     .about-text h1 {
-        font-size: 4rem;
-        line-height: 1;
+        /* font-size: 4rem;
+        line-height: 1; */
     }
 
 
     .text p {
         /* padding-right: 800px; */
-        margin-top: 20px;
+        /* margin-top: 20px;
         margin-left: 20px;
 
         font-size: 1rem;
         line-height: 1.3rem;
-        width: 54%;
+        width: 54%; */
 
 
     }
 
     .about-text {
-        margin-left: 150px;
+        /* margin-left: 150px; */
     }
 
-    title-img {
-        height: 50px;
-        margin-left: 2rem;
+    .title-img {
+        /* height: 50px;
+        margin-left: 2rem; */
     }
 
 
@@ -189,37 +246,37 @@ title-img {
 
 
     .intro #hero {
-        height: 60vh;
-        margin-bottom: 100px;
+        /* height: 60vh;
+        margin-bottom: 100px; */
 
 
     }
 
     .about-text h1 {
-        font-size: 5rem;
-        line-height: 1;
+        /* font-size: 5rem;
+        line-height: 1; */
     }
 
 
 
 
-    title-img {
+    .title-img {
         height: 70px;
         margin-left: 2rem;
     }
 
     .text p {
-        width: 50%;
+        /* width: 50%;
         margin-left: 20px;
 
         font-size: 1.2rem;
         line-height: 1.5rem;
-        margin-top: 20px;
+        margin-top: 20px; */
     }
 
     .about-text {
-        margin-left: 150px;
-        margin-top: 150px;
+        /* margin-left: 150px;
+        margin-top: 150px; */
     }
 
 
@@ -235,22 +292,22 @@ title-img {
     /* styles */
   
     .intro #hero {
-        height: 70vh;
-        margin-bottom: 120px;
+        /* height: 70vh;
+        margin-bottom: 120px; */
     }
 
 
     .about-text h1 {
-        font-size: 6.5rem;
+        /* font-size: 6.5rem; */
     }
 
 
     .about-text p {
         /* padding-right: 800px; */
-        margin-left: 20px;
+        /* margin-left: 20px;
 
         font-size: 1.8rem;
-        line-height: 2rem;
+        line-height: 2rem; */
 
 
 
@@ -263,9 +320,9 @@ title-img {
 
     .about-text p {
         /* padding-right: 800px; */
-        margin-left: 20px;
+        /* margin-left: 20px;
 
-        width: 50%;
+        width: 50%; */
 
 
     }
