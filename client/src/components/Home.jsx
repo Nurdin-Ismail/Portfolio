@@ -24,7 +24,7 @@ export default function Home() {
     return (
         <div>
 
-            {/* <div class='about bg-[#E9EAFF]  ' id='about'>
+            <div class='about bg-[#E9EAFF]  ' id='about'>
 
 
 
@@ -47,7 +47,7 @@ export default function Home() {
                     </div>
                 </div>
 
-            </div> */}
+            </div>
 
 
             <section id='projects' className='grid'>
