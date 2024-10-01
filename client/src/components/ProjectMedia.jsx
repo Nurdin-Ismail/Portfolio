@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import video from '../public/decora/decoRA.mp4'
+import home from '../public/decora/decoRA.mp4'
+import shop from '../public/decora/store.mp4'
+import product from '../public/decora/product.mp4'
+import user from '../public/decora/User Login Page.mp4'
+import cart from '../public/decora/cart.mp4'
 // import adminlogin from '../public/restomate/AdminLogin.png'
 import analytics from '../public/restomate/Analytics 1.png'
 import dashboard from '../public/restomate/Dashboard 1.png'
@@ -20,7 +24,7 @@ export default function ProjectMedia({ current, setcurrent }) {
 
         if (current == 'decora') {
 
-            let content = [video, video, video, video, video]
+            let content = [home, shop, product, user, cart]
             let titles = ['Home', 'Shop', 'Product', 'User', 'Cart']
 
             if (content && titles) {
