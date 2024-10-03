@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react'
-import home from '../public/decora/decoRA.webm'
-import shop from '../public/decora/store.webm'
-import product from '../public/decora/product.webm'
-import user from '../public/decora/User Login Page.webm'
-import cart from '../public/decora/cart.webm'
+import home from '../public/decora/decoRA.mp4'
+import shop from '../public/decora/store.mp4'
+import product from '../public/decora/product.mp4'
+import user from '../public/decora/User Login Page.mp4'
+import cart from '../public/decora/cart.mp4'
 // import adminlogin from '../public/restomate/AdminLogin.png'
 import analytics from '../public/restomate/Analytics 1.png'
 import dashboard from '../public/restomate/Dashboard 1.png'
@@ -12,7 +12,7 @@ import review from '../public/restomate/Reviews 1.png'
 import orderlist from '../public/restomate/Order List 1.png'
 import forward from '../public/forward.png'
 
-import odoo from '../public/odoo/Odoo.webm'
+import odoo from '../public/odoo/Odoo.mp4'
 
 
 
@@ -78,7 +78,7 @@ export default function ProjectMedia({ current, setcurrent }) {
                         {slides.map((item, index) => (
                             
                             <video key={index} className=' grid decora-vid'    controls={true}>
-                                <source src={item} type="video/webm" />
+                                <source src={item} type="video/mp4" />
                             </video>
                         ))}
                     </div>
@@ -113,7 +113,7 @@ export default function ProjectMedia({ current, setcurrent }) {
                 >
 
                     <video className='decora-vid' controls={true}playsInline>
-                        <source src={odoo} type="video/webm" />
+                        <source src={odoo} type="video/mp4" />
                     </video>
 
 
