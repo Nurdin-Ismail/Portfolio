@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import home from '../public/decora/decoRA.mp4'
-import shop from '../public/decora/store.mp4'
-import product from '../public/decora/product.mp4'
-import user from '../public/decora/User Login Page.mp4'
-import cart from '../public/decora/cart.mp4'
+import React, { useEffect, useState, useRef } from 'react'
+import home from '../public/decora/decoRA.webm'
+import shop from '../public/decora/store.webm'
+import product from '../public/decora/product.webm'
+import user from '../public/decora/User Login Page.webm'
+import cart from '../public/decora/cart.webm'
 // import adminlogin from '../public/restomate/AdminLogin.png'
 import analytics from '../public/restomate/Analytics 1.png'
 import dashboard from '../public/restomate/Dashboard 1.png'
@@ -12,13 +12,17 @@ import review from '../public/restomate/Reviews 1.png'
 import orderlist from '../public/restomate/Order List 1.png'
 import forward from '../public/forward.png'
 
-import odoo from '../public/odoo/Odoo.mp4'
+import odoo from '../public/odoo/Odoo.webm'
+
+
 
 
 export default function ProjectMedia({ current, setcurrent }) {
     const [slide, setslide] = useState(0);
     const [slides, setslides] = useState(0);
     const [titles, settitles] = useState(0)
+
+   
 
     useEffect(() => {
 
@@ -45,6 +49,8 @@ export default function ProjectMedia({ current, setcurrent }) {
 
     }, [])
 
+   
+
 
     function handleslides(direction) {
 
@@ -70,8 +76,9 @@ export default function ProjectMedia({ current, setcurrent }) {
                     >
 
                         {slides.map((item, index) => (
-                            <video key={index} className=' grid decora-vid' autoPlay loop muted playsInline>
-                                <source src={item} type="video/mp4" />
+                            
+                            <video key={index} className=' grid decora-vid'    controls={true}>
+                                <source src={item} type="video/webm" />
                             </video>
                         ))}
                     </div>
@@ -105,8 +112,8 @@ export default function ProjectMedia({ current, setcurrent }) {
                     className=''
                 >
 
-                    <video className='decora-vid' autoPlay loop muted playsInline>
-                        <source src={odoo} type="video/mp4" />
+                    <video className='decora-vid' controls={true}playsInline>
+                        <source src={odoo} type="video/webm" />
                     </video>
 
 
