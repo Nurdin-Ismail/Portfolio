@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import home from '../public/decora/homepage.webm'
-import shop from '../public/decora/store.mp4'
+import shop from '../public/decora/store.webm'
 import product from '../public/decora/product.mp4'
 import user from '../public/decora/User Login Page.mp4'
 import cart from '../public/decora/cart1.mp4'
@@ -27,9 +27,9 @@ export default function ProjectMedia({ current, setcurrent }) {
     useEffect(() => {
 
         if (current == 'decora') {
-            // , shop, product, user, cart
+            // , product, user, cart
 
-            let content = [home]
+            let content = [home, shop]
             let titles = ['Home', 'Shop', 'Product', 'User', 'Cart']
 
             if (content && titles) {
