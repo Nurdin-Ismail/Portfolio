@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react'
-import home from '../public/decora/homepage.webm'
-import shop from '../public/decora/store.webm'
+import home from '../public/decora/homepage.mp4'
+import shop from '../public/decora/store.mp4'
 import product from '../public/decora/product.mp4'
-import user from '../public/decora/User Login Page.mp4'
-import cart from '../public/decora/cart1.mp4'
+import user from '../public/decora/User-Login-Page.mp4'
+import cart from '../public/decora/cart.mp4'
 // import adminlogin from '../public/restomate/AdminLogin.png'
 import analytics from '../public/restomate/Analytics 1.png'
 import dashboard from '../public/restomate/Dashboard 1.png'
@@ -27,9 +27,9 @@ export default function ProjectMedia({ current, setcurrent }) {
     useEffect(() => {
 
         if (current == 'decora') {
-            // user, cart
+            // 
 
-            let content = [home, shop, product,]
+            let content = [home, shop, product, user, cart]
             let titles = ['Home', 'Shop', 'Product', 'User', 'Cart']
 
             if (content && titles) {
@@ -79,7 +79,7 @@ export default function ProjectMedia({ current, setcurrent }) {
                         {slides.map((item, index) => (
                             
                             <video key={index} className=' grid decora-vid'  preload="auto" playsInline controls={true}>
-                                <source src={item} type="video/webm" />
+                                <source src={item} type="video/mp4" />
                             </video>
                         ))}
                     </div>
