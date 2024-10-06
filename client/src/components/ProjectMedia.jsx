@@ -27,9 +27,9 @@ export default function ProjectMedia({ current, setcurrent }) {
     useEffect(() => {
 
         if (current == 'decora') {
-            // , product, user, cart
+            // user, cart
 
-            let content = [home, shop]
+            let content = [home, shop, product,]
             let titles = ['Home', 'Shop', 'Product', 'User', 'Cart']
 
             if (content && titles) {
