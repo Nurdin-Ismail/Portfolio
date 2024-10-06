@@ -78,7 +78,7 @@ export default function ProjectMedia({ current, setcurrent }) {
 
                         {slides.map((item, index) => (
                             
-                            <video key={index} className=' grid decora-vid'  preload="auto"  controls={true}>
+                            <video key={index} className=' grid decora-vid'  preload="auto" playsInline controls={true}>
                                 <source src={item} type="video/webm" />
                             </video>
                         ))}
