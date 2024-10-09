@@ -177,7 +177,7 @@ export default function Home() {
                             <div className={overodoo ? 'overlay w-[100%]  ' : 'hidden'}>
 
                                 <div className='expand-image'>
-                                    <a href="https://github.com/Nurdin-Ismail"><img src={github} alt="" /></a>
+                                    <a href="https://github.com/Nurdin-Ismail/Property-Ads"><img src={github} alt="" /></a>
                                     <img src={expand} alt="" className=' cursor-pointer' onClick={() => setcurrent('odoo')} />
                                 </div>
 
