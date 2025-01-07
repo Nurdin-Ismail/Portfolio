@@ -195,8 +195,8 @@ export default function Home() {
                         </div>
 
                         <div className=' proj-text'>
-                            <h1 className=''>Property Ads</h1>
-                            <p className=''>Property Ads is an Odoo module that facilitates property listings, managing offers, and property sales. It includes features for defining apartment types, adding tags like whether the property is furnished or cozy,  and tracking the status of properties through the entire sales process.</p>
+                            <h1 className=''>Pos Mpesa Integration</h1>
+                            <p className=''>This module integrates Mpesa payment functionality into Odoo's Point of Sale (POS) system. It enhances the payment process by enabling businesses to initiate Mpesa STK Push transactions directly from the POS interface and updates the user with the transaction status (successful, canceled, or failed).</p>
                         </div>
 
 
