@@ -12,7 +12,8 @@ import review from '../public/restomate/Reviews 1.png'
 import orderlist from '../public/restomate/Order List 1.png'
 import forward from '../public/forward.png'
 
-import odoo from '../public/odoo/Odoo.mp4'
+import setup from '../public/odoo/setup.mp4'
+import pos from '../public/odoo/shop.mp4'
 
 
 
@@ -22,7 +23,7 @@ export default function ProjectMedia({ current, setcurrent }) {
     const [slides, setslides] = useState(0);
     const [titles, settitles] = useState(0)
 
-   
+
 
     useEffect(() => {
 
@@ -46,11 +47,20 @@ export default function ProjectMedia({ current, setcurrent }) {
                 settitles(titles)
             }
 
+        } else if (current == 'odoo') {
+            let content = [setup, pos]
+            let titles = ['Setup', 'Point of Sale',]
+
+            if (content && titles) {
+                setslides(content)
+                settitles(titles)
+            }
+
         }
 
     }, [])
 
-   
+
 
 
     function handleslides(direction) {
@@ -71,20 +81,20 @@ export default function ProjectMedia({ current, setcurrent }) {
         if (current == 'decora' && slides) {
 
             return <div className='decora-div '>
-                    <div
-                        className='best'
-                        style={{ transform: `translateX(-${slide * 100}%)` }} // Calculating the translate
-                    >
+                <div
+                    className='best'
+                    style={{ transform: `translateX(-${slide * 100}%)` }} // Calculating the translate
+                >
 
-                        {slides.map((item, index) => (
-                            
-                            <video key={index} className=' grid decora-vid'  preload="auto" playsInline controls={true}>
-                                <source src={item} type="video/mp4" />
-                            </video>
-                        ))}
-                    </div>
+                    {slides.map((item, index) => (
 
+                        <video key={index} className=' grid decora-vid' preload="auto" playsInline controls={true}>
+                            <source src={item} type="video/mp4" />
+                        </video>
+                    ))}
                 </div>
+
+            </div>
 
 
 
@@ -107,18 +117,21 @@ export default function ProjectMedia({ current, setcurrent }) {
                 </div>
             </div>
 
-        } else if (current == 'odoo') {
-            return <div className=' decora-div'>
+        } else if (current == 'odoo' && slides) {
+            return <div className='decora-div '>
                 <div
-                    className=''
+                    className='best'
+                    style={{ transform: `translateX(-${slide * 100}%)` }} // Calculating the translate
                 >
 
-                    <video className='decora-vid' controls={true}playsInline>
-                        <source src={odoo} type="video/mp4" />
-                    </video>
+                    {slides.map((item, index) => (
 
-
+                        <video key={index} className=' grid decora-vid' preload="auto" playsInline controls={true}>
+                            <source src={item} type="video/mp4" />
+                        </video>
+                    ))}
                 </div>
+
             </div>
 
         }
@@ -138,15 +151,15 @@ export default function ProjectMedia({ current, setcurrent }) {
 
 
 
-                    <div className="modal-content">
+                <div className="modal-content">
 
-                        {handleContent()}
+                    {handleContent()}
 
 
-                        <div className='content-name '>
-                            <div className='container-2'>
-                                 {/* arrow left */}
-                            <div className={current == 'odoo' ? ' hidden' : 'center-end '}>
+                    <div className='content-name '>
+                        <div className='container-2'>
+                            {/* arrow left */}
+                            <div className={'center-end '}>
                                 <div
                                     className={slide == 0 ? ' arrow1  opacity-50 '
                                         :
@@ -174,7 +187,7 @@ export default function ProjectMedia({ current, setcurrent }) {
 
                             {/* arrow right */}
                             <div
-                                className={current == 'odoo' ? 'hidden' : ' arrow-and-exit'}>
+                                className={' arrow-and-exit'}>
                                 <div
                                     className={slides.length - 1 != slide ?
                                         ' arrow2   '
@@ -186,16 +199,16 @@ export default function ProjectMedia({ current, setcurrent }) {
 
                                 </div>
 
-                                 <h1 className='exit' onClick={() => setcurrent(false)}>X</h1>
+                                <h1 className='exit' onClick={() => setcurrent(false)}>X</h1>
 
 
                             </div>
-                            </div>
-                           
                         </div>
+
                     </div>
                 </div>
             </div>
-        
+        </div>
+
     );
 }
